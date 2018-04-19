@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quizing</title>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap-theme.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/mystyles.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <!--header-->
+    <div class="head fixed-top">
+        <div class="container">
+            <div class="jumbotrons">
+                <p id='p1' class="text-center"><strong>QUIZING</strong></p>
+                <p id='p2' class="text-center">TEST YOUR SELF, JUST FOR FUN!</p>
+            </div>
+        </div>
+   </div>
+
+    <div class="container">
+        <div class="row center">
+            <ul class="nav navbar-nav" role="navigation">
+                <li><a href="#"><strong>Start</strong></a></li>
+                <li><a href="#"><strong>Ranking</strong></a></li>
+                <li><a href="start"><strong>Restart</strong></a></li>
+                <li><a href="/"><strong>Exit</strong></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--mdiddle part-->
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-8 col-sm-push-2">
+                <div class="main-box">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+                                <h3>Please input your user name to start quizing:</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-3 col-sm-offset-2">
+                                <input type="text" class="form-control" id="userName">
+                                </input><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-3 col-sm-offset-2">
+                                <a id="signbtn" class="btn btn-success btn-block" href="start" role="button">START</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="row-footer">
+        <h5 class="text-center"> &copy; Weiling IEMS5709 </h5>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}" rel="stylesheet"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}" rel="stylesheet"></script>
+    <script>
+
+    $(function() {
+        $('#signbtn').click(function() {
+            $.ajax({
+                url: '/signUp',
+                data: {userName: $( "#userName" ).val()},
+                dataType: "json",
+                type: 'POST',
+                success: function(response) {
+                    console.log(response);
+                },
+                error: function(error) {
+                    console.log(error);
+                }
+            });
+        });
+    });
+
+    </script>
+
+</body>
+
+</html>

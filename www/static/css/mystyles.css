@@ -1,0 +1,128 @@
+body {
+    background-color: #C5C9B8;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.head {
+  background-image: url("../images/header.jpg");
+}
+
+.jumbotrons {
+  padding: 30px 10px;
+  color:#ccff33
+}
+
+.jumbotrons #p1 {
+    font-size: 60px;
+}
+.jumbotrons #p2 {
+    font-size: 20px;
+}
+
+.center {
+  width: auto;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-box {
+  background-color: #e7e9e2;
+  padding: 20px 10px;
+  height: 350px;
+}
+
+.sidebar {
+  background-color: #dbded3;
+  padding: 20px 10px;
+  height: 200px;
+}
+
+.navbar-nav li a {
+  color:#7e9b09;
+}
+
+.navbar-nav li a.active {
+  background-color: #a4b756;
+  color: white;
+}
+
+.navbar-nav li a:hover:not(.active) {
+  background-color: #6c7458;
+  color: white;
+}
+
+.header {
+  padding: 60px;
+  background-color: #f1f1f1;
+  background-image: url("images/logo_meitu_1.png");
+  background-size: 40% 80%;
+  background-repeat: no-repeat;
+  background-position: 40% 80%;
+}
+
+#qlist {
+  width: 400px;
+  list-style-type: none;
+  border-color: black;
+}
+
+#qlist li{
+    border-color: black;
+    background-color: #dbded3;
+}
+
+#qlist li span{
+    display: block;
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+#qlist li span.active {
+    background-color: #0a9faf;
+    color: white;
+}
+
+#qlist li span:hover:not(.active) {
+    background-color: #6c7458;
+    color: white;
+}
+
+#subnavbar {
+  width: 180px;
+  list-style-type: none;
+}
+
+#subnavbar li {
+    border-color: black;
+    background-color: #dbded3;
+}
+
+#subnavbar li a {
+    display: block;
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+#subnavbar li a.active {
+    background-color: #0a9faf;
+    color: white;
+}
+
+#subnavbar li a:hover:not(.active) {
+    background-color: #6c7458;
+    color: white;
+}
+
+footer {
+  padding: 0px 0px;
+  margin: 0px auto;
+  position: fixed;
+  height: 40px;
+  bottom: 0;
+  width: 100%;
+  background-color: #acb299;
+}
