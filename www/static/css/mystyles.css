@@ -73,19 +73,24 @@ body {
     background-color: #dbded3;
 }
 
-#qlist li span{
+#qlist li a{
     display: block;
     color: black;
     padding: 10px 10px;
     text-decoration: none;
 }
 
-#qlist li span.active {
-    background-color: #0a9faf;
+#qlist li a:active {
+    background-color: #6c7458;
     color: white;
 }
 
-#qlist li span:hover:not(.active) {
+#qlist li a:focus {
+    background-color: #6c7458;
+    color: white;
+}
+
+#qlist li a:hover:not(.active) {
     background-color: #6c7458;
     color: white;
 }

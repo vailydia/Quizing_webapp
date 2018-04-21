@@ -1,0 +1,30 @@
+{% extends 'index.html' %}
+
+{% block container %}
+
+  <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <div class="main-box">
+              <div class="container">
+                  <br>
+                  <div class="row">
+                      <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+                          <h3>Please input your user and room name to start:</h3>
+                      </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                      <div class="col-xs-12 col-sm-3 col-sm-offset-2">
+                          <form id="sign" method="post" action="/main">
+                              <input type="text" class="form-control" id="userName" name="userName" required="true" placeholder="User name"></input><br>
+                              <input type="text" class="form-control" id="roomName" name="userRoom" required="true" placeholder="Room name"></input><br>
+                              <input type="submit" value="START" class="btn btn-success btn-block" role="button"/></input>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+{% endblock %}

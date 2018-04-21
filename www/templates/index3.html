@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quizing</title>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap-theme.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/mystyles.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <!--header-->
+    <div><h2>hello world!</h2>
+    <br><button onclick="startQuiz()">CLICK</button>
+    </div>
+
+
+
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}" rel="stylesheet"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}" rel="stylesheet"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
+
+    <script type="text/javascript" charset="utf-8">
+      //$(document).ready(function() {
+        namespace = '/connect';
+        console.log('http://' + document.domain + ':' + location.port + namespace);
+        var socket = io.connect('http://' + document.domain + ':' + location.port + namespace);
+
+        socket.on('server response', function(msg) {
+            console.log('Received: ' + msg.data);
+        });
+
+        // message handler for the 'join_room' channel
+        socket.on('joined-room', function(response) {
+            console.log('receive data from join room...: ');
+            console.log(response);
+        });
+
+
+        function startQuiz() {
+          console.log('Start quiz...');
+          socket.emit('join', {room:'room1', username: 'weiling'});
+        }
+    </script>
+
+</body>
+</html>

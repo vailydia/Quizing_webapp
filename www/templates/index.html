@@ -21,11 +21,10 @@
             </div>
         </div>
    </div>
-
     <div class="container">
         <div class="row center">
             <ul class="nav navbar-nav" role="navigation">
-                <li><a href="#"><strong>Start</strong></a></li>
+                <li><a href="/"><strong>Home</strong></a></li>
                 <li><a href="#"><strong>Ranking</strong></a></li>
                 <li><a href="start"><strong>Restart</strong></a></li>
                 <li><a href="/"><strong>Exit</strong></a></li>
@@ -35,60 +34,94 @@
 
     <!--mdiddle part-->
     <div class="container">
-        <div class="row">
+        {% block container %}{% endblock %}
 
-            <div class="col-xs-12 col-sm-8 col-sm-push-2">
-                <div class="main-box">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-6 col-sm-offset-1">
-                                <h3>Please input your user name to start quizing:</h3>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-3 col-sm-offset-2">
-                                <input type="text" class="form-control" id="userName">
-                                </input><br>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-3 col-sm-offset-2">
-                                <a id="signbtn" class="btn btn-success btn-block" href="start" role="button">START</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <footer class="row-footer">
         <h5 class="text-center"> &copy; Weiling IEMS5709 </h5>
     </footer>
-
     <script src="{{ url_for('static', filename='js/jquery.min.js') }}" rel="stylesheet"></script>
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}" rel="stylesheet"></script>
-    <script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
 
-    $(function() {
-        $('#signbtn').click(function() {
-            $.ajax({
-                url: '/signUp',
-                data: {userName: $( "#userName" ).val()},
-                dataType: "json",
-                type: 'POST',
-                success: function(response) {
-                    console.log(response);
-                },
-                error: function(error) {
-                    console.log(error);
-                }
-            });
+    <script type="text/javascript" charset="utf-8">
+        namespace = '/connect';
+        console.log('http://' + document.domain + ':' + location.port + namespace);
+        var socket = io.connect('http://' + document.domain + ':' + location.port + namespace);
+
+        var user = {};
+        var question = {};
+        var answer = null;
+        socket.on('connect', function() {
+            if($('#name').val() === undefined) {
+                console.log('Login Connected!')
+            }else{
+                console.log('Main Connected!')
+                socket.emit('join', {data:'start quiz'});
+            }
         });
-    });
+
+        // message handler for the 'join_room' channel
+        socket.on('joined-room', function(response) {
+            console.log(response);
+            user = response.user;
+            //renew the current score
+            $('#score').text(user.score);
+            //renew the question
+            question = response.question;
+            $('#Q').text(question.question);
+            $('#A').html('&nbsp &nbsp' + question.answer[0]);
+            $('#B').html('&nbsp &nbsp' + question.answer[1]);
+            $('#C').html('&nbsp &nbsp' + question.answer[2]);
+            $('#D').html('&nbsp &nbsp' + question.answer[3]);
+        });
+
+        // handle the game over : show the score & rank; out room?? de connect?
+        socket.on('game-over', function(response) {
+            user = response.user;
+            //renew the current score
+            $('#score').text(user.score);
+            $('.main-box').html('<h1><center>ALL DONE!!!</center></h1><br><h4><center>User name: '
+             + user.username + '</center></h4><h4><center>Score: '
+             + user.score + '</center></h4><h4><center>Rank: 1</center></h4><br>'
+             + '<center><button class="btn btn-success" onclick="newGame()">NEW START</button></center>');
+        });
+
+        function select(tab){
+            answer = null;
+            if (tab === 1) {
+                document.getElementById('A').setAttribute("active", true);
+                answer = 'A';
+            }else if(tab === 2) {
+                document.getElementById('B').setAttribute("active", true);
+                answer = 'B';
+            }else if(tab === 3) {
+                document.getElementById('C').setAttribute("active", true);
+                answer = 'C';
+            }else {
+                document.getElementById('D').setAttribute("active", true);
+                answer = 'D';
+            }
+            console.log('select answer:.....' + tab)
+        }
+
+        function submitAnswer(){
+            if(answer != null){
+                socket.emit('join', {data:'quiz process', ans: answer, qid: question.qid});
+            }else{
+                alert("Please choose a answer!");
+            }
+            //after submit, clear answer!
+            answer = null;
+        }
+
+        //start new round, clear all variable, out room, de connect...etc
+        function newGame(){
+            window.location.href = "/";
+        }
 
     </script>
 
 </body>
-
 </html>
