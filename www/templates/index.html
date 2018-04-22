@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Quizing</title>
+    <title>Quizzing</title>
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename='css/bootstrap-theme.min.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename='css/mystyles.css') }}" rel="stylesheet">
@@ -16,7 +16,7 @@
     <div class="head fixed-top">
         <div class="container">
             <div class="jumbotrons">
-                <p id='p1' class="text-center"><strong>QUIZING</strong></p>
+                <p id='p1' class="text-center"><strong>QUIZZING</strong></p>
                 <p id='p2' class="text-center">TEST YOUR SELF, JUST FOR FUN!</p>
             </div>
         </div>
@@ -26,7 +26,6 @@
             <ul class="nav navbar-nav" role="navigation">
                 <li><a href="/"><strong>Home</strong></a></li>
                 <li><a href="#"><strong>Ranking</strong></a></li>
-                <li><a href="start"><strong>Restart</strong></a></li>
                 <li><a href="/"><strong>Exit</strong></a></li>
             </ul>
         </div>
@@ -35,7 +34,6 @@
     <!--mdiddle part-->
     <div class="container">
         {% block container %}{% endblock %}
-
     </div>
 
     <footer class="row-footer">
@@ -47,12 +45,18 @@
 
     <script type="text/javascript" charset="utf-8">
         namespace = '/connect';
-        console.log('http://' + document.domain + ':' + location.port + namespace);
-        var socket = io.connect('http://' + document.domain + ':' + location.port + namespace);
+        port = '50000'
+        // document.domain: Returns the domain name of the server that loaded the document
+        // location.port:
+        console.log('http://' + document.domain + ':' + port + namespace);
+        var socket = io.connect('http://' + document.domain + ':' + port + namespace);
 
         var user = {};
         var question = {};
         var answer = null;
+        var id = 0;
+        var set = null;
+
         socket.on('connect', function() {
             if($('#name').val() === undefined) {
                 console.log('Login Connected!')
@@ -70,11 +74,28 @@
             $('#score').text(user.score);
             //renew the question
             question = response.question;
+            id = response.id;
+            $('#nid').text('    No.' + (id+1));
             $('#Q').text(question.question);
             $('#A').html('&nbsp &nbsp' + question.answer[0]);
             $('#B').html('&nbsp &nbsp' + question.answer[1]);
             $('#C').html('&nbsp &nbsp' + question.answer[2]);
             $('#D').html('&nbsp &nbsp' + question.answer[3]);
+
+            //using setInterval to realize a Countdown。
+            (function() {
+                var time = 10;
+                set = setInterval(function() {
+                    time--;
+                    $('#time').text(time);
+                    if(time === 0) {
+                        clearInterval(set);
+                        socket.emit('join', {data:'quiz process', ans: answer, id: id});
+                        document.getElementById(answer).setAttribute("active", false);
+                        answer = null;
+                    }
+                }, 1000);
+            })()
         });
 
         // handle the game over : show the score & rank; out room?? de connect?
@@ -84,8 +105,12 @@
             $('#score').text(user.score);
             $('.main-box').html('<h1><center>ALL DONE!!!</center></h1><br><h4><center>User name: '
              + user.username + '</center></h4><h4><center>Score: '
-             + user.score + '</center></h4><h4><center>Rank: 1</center></h4><br>'
+             + user.score + '</center></h4><h4><center>WinRate: '
+             + user.winRate + ' </center></h4><br>'
              + '<center><button class="btn btn-success" onclick="newGame()">NEW START</button></center>');
+            room = response.room;
+            console.log(room);
+
         });
 
         function select(tab){
@@ -108,7 +133,8 @@
 
         function submitAnswer(){
             if(answer != null){
-                socket.emit('join', {data:'quiz process', ans: answer, qid: question.qid});
+                clearInterval(set);
+                socket.emit('join', {data:'quiz process', ans: answer, id: id});
             }else{
                 alert("Please choose a answer!");
             }

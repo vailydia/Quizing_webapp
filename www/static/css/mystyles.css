@@ -41,6 +41,7 @@ body {
 
 .navbar-nav li a {
   color:#7e9b09;
+  font-size: 15px;
 }
 
 .navbar-nav li a.active {
@@ -63,7 +64,6 @@ body {
 }
 
 #qlist {
-  width: 400px;
   list-style-type: none;
   border-color: black;
 }
@@ -95,31 +95,11 @@ body {
     color: white;
 }
 
-#subnavbar {
-  width: 180px;
-  list-style-type: none;
+#time {
+    font-size: 60px;
 }
-
-#subnavbar li {
-    border-color: black;
-    background-color: #dbded3;
-}
-
-#subnavbar li a {
-    display: block;
-    color: black;
-    padding: 10px 10px;
-    text-decoration: none;
-}
-
-#subnavbar li a.active {
-    background-color: #0a9faf;
-    color: white;
-}
-
-#subnavbar li a:hover:not(.active) {
-    background-color: #6c7458;
-    color: white;
+#nid {
+    font-size: 30px;
 }
 
 footer {

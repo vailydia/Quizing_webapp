@@ -1,41 +1,39 @@
 import json
 from flask import Flask, current_app, jsonify, request, render_template, redirect, url_for, session
 from flask_socketio import SocketIO, join_room, emit, send, leave_room, close_room, rooms, disconnect
-from time import gmtime, strftime
-from operator import itemgetter
 import random
+from pymongo import MongoClient
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY']='xiweiling'
+app.config['SECRET_KEY'] = 'xiweiling_quiz_webapp'
 socketio = SocketIO(app)
-ROOMS = {} # dict to track active rooms
+client = MongoClient('localhost', 27017)
+db = client['mydb']  # my own database in mongodb
+# collections
+questions_collection = db['questions']
+users_collection = db['users']
 
-# data model: question, user,
+ROOMS = {}  # dict to track active rooms
 
-
-QUESTIONS = [
-    {
-        'qid':0,
-        'question': 'What is your favoriate color?',
-        'answer': ['A.  red','B.  blue','C.  yellow','D.  black'],
-        'ans': 'A',
-    },
-    {
-        'qid':1,
-        'question': 'What is your favoriate color222?',
-        'answer': ['red', 'blue', 'yellow', 'black'],
-        'ans': 'A',
-    },
-]
-
-users = {
-    'default': {
-        'username': 'default',
-        'score': 0,
-        'rank': 1,
-    }
-}
+# user = {
+#     'username': 'default-user',
+#     'score': 0,
+#     'winRate': 0,
+#     'room': 'default-room',
+# }
+#
+# question = {
+#     'qid': 9,
+#     'question': 'What is the largest city in Great Britain by size?',
+#     'answer': [
+#         'A. Belfast',
+#         'B. Glasgow',
+#         'C. London',
+#         'D. Edinburgh'
+#     ],
+#     'ans': 'C',
+# }
 
 
 @app.route('/')
@@ -45,63 +43,96 @@ def index():
 
 @app.route('/main', methods=['POST', 'GET'])
 def show_main():
-    # choose a room and question set
-    username = request.form.get("userName")
+    # create a room
     room = request.form.get("userRoom")
-    current_user = {'username': username, 'room': room, 'score': 10}
+    # join_room(room)
+    username = request.form.get("userName")
+    if users_collection.find_one({'username': username}) is not None:
+        current_user = users_collection.find_one({'username': username})
+        current_user['_id'] = ''
+    else:
+        current_user = {
+            'username': username,
+            'room': room,
+            'score': 0,
+            'winRate': 1,
+        }
+
     session['user'] = current_user
-    choosen_qid = random.randint(0,1) # random choose a questions set!
-    # session['questionset'] = QUESTIONS[choosen_qid]
-    session['questionset'] = QUESTIONS
-    return render_template('main.html', username=username, room=room, score=10)
+    if ROOMS.get(room):
+        ROOMS[room].append(current_user)
+    else:
+        inrooms = list()
+        inrooms.append(current_user)
+        ROOMS[room] = inrooms
+
+    # random choose a questions set!
+    randomList = set()
+    questionSet = []
+    while len(randomList) < 5:
+        choosen_qid = random.randrange(10)
+        randomList.add(choosen_qid)
+    for id in randomList:
+        question = questions_collection.find_one({'qid': id})
+        question['_id'] = ''
+        questionSet.append(question)
+
+    session['questionset'] = questionSet
+    return render_template('main.html', username=username, room=room, score=current_user['score'], winRate=current_user['winRate'])
 
 
 @socketio.on('join', namespace='/connect')
 def on_join(data):
     user = session.get('user')
     questionset = session.get('questionset')
+
     if user is not None:
         room = user['room']
-        ROOMS[room] = questionset
-        join_room(room)
-
+        id = 0
         process = data['data']
         if process == 'start quiz':
-            question = questionset[0]
+            question = questionset[id]
             question_send = {
                 'qid': question['qid'],
                 'question': question['question'],
                 'answer': question['answer'],
             }
-            emit('joined-room', {'user': user, 'question': question_send})
-        else:
-            qid = data['qid']
-            ans = data['ans']
-            if check_answer(qid, ans):
-                user['score'] = user['score'] + 10
+            emit('joined-room', {'user': user, 'question': question_send, 'id': 0})
 
-            if qid+1 < len(questionset):
-                question = questionset[qid+1]
+        else:
+            id = data['id']
+            ans = data['ans']
+            if check_answer(id, ans):
+                user['score'] = user['score'] + 20
+
+            if id+1 < len(questionset):
+                question = questionset[id+1]
                 question_send = {
                     'qid': question['qid'],
                     'question': question['question'],
                     'answer': question['answer'],
                 }
-                emit('joined-room', {'user': user, 'question': question_send})
+                emit('joined-room', {'user': user, 'question': question_send, 'id': id+1})
             else:
+                # compute new winRate
+                newRate = (float(user['score']) / 100 + float(user['winRate'])) / 2
+                user['winRate'] = round(newRate, 1)
+
                 # handle the game over!
-                emit('game-over', {'user': user})
+                emit('game-over', {'user': user, 'room': ROOMS[room]})
+
     else:
-        pass
         # handle no user exist situation
+        pass
 
 
-def check_answer(qid, ans):
-    if ans == QUESTIONS[qid]['ans']:
-        print('question' + str(qid) + 'is true.')
+def check_answer(id, ans):
+    questionset = session.get('questionset')
+    if ans == questionset[id]['ans']:
+        print('Question ' + str(id) + ' is true.')
         return True
     else:
-        print('question' + str(qid) + 'is false.')
+        print('Question ' + str(id) + ' is false.')
         return False
 
 
@@ -133,4 +164,4 @@ def default_error_handler(e):
 
 
 if __name__ == "__main__":
-    socketio.run(app, host='127.0.0.1',debug=True)
+    socketio.run(app, host='127.0.0.1', port=50000, debug=True)

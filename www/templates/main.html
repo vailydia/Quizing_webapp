@@ -8,6 +8,7 @@
               <h3>Profile:</h3>
               <p>User name: <span id="name"> {{username}}</span></p>
               <p>Score: <span  id="score"> {{score}}</span></p>
+              <p>WinRate: <span id="winRate">{{winRate}}</span></p>
               <p>Room: <span id="room">{{room}}</span></p>
           </div>
       </div>
@@ -16,8 +17,11 @@
           <div class="main-box">
               <div class="container">
                   <div class="row">
-                      <div class="col-xs-12 col-sm-offset-1">
-                          <h3 id='Q'>Question 1: Which planet is the hottest?</h3>
+                      <div class="col-xs-12 col-sm-1">
+                          <strong><div id='nid'></div></strong>
+                      </div>
+                      <div class="col-xs-12 col-sm-5">
+                          <h4 id='Q'>Question 1: Which planet is the hottest?</h4>
                           <ul id="qlist" class="nav nav-pills nav-stacked">
                               <li><a tabindex="1" id='A' onclick="select(1)"></a></li>
                               <li><a tabindex="2" id='B' onclick="select(2)"></a></li>
@@ -26,16 +30,20 @@
                               <br>
                           </ul>
                           <div class="row">
-                              <div class="col-xs-12 col-md-4">
-                                  <button class="btn btn-success">PREV</button>
-                              </div>
-                              <div class="col-xs-12 col-md-6">
-                                  <button class="btn btn-success" onclick="submitAnswer()">NEXT</button>
+                              <div class="col-xs-12 col-sm-offset-2 col-sm-5">
+                                  <button class="btn btn-success btn-block" onclick="submitAnswer()">NEXT</button>
                               </div>
                           </div>
                       </div>
                   </div>
               </div>
+          </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-2">
+          <div class="sidebar">
+              <h3>TIMER:</h3>
+              <center><strong><div id='time'></div></strong></center>
           </div>
       </div>
   </div>
