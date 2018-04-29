@@ -9,16 +9,22 @@
                   <br>
                   <div class="row">
                       <div class="col-xs-12 col-sm-6 col-sm-offset-1">
-                          <h3>Please input your user and room name to start:</h3>
+                          <h3>Please input your name to start quizzing: </h3>
                       </div>
                   </div>
                   <br>
                   <div class="row">
                       <div class="col-xs-12 col-sm-3 col-sm-offset-2">
-                          <form id="sign" method="post" action="/main">
-                              <input type="text" class="form-control" id="userName" name="userName" required="true" placeholder="User name"></input><br>
-                              <input type="text" class="form-control" id="roomName" name="userRoom" required="true" placeholder="Room name"></input><br>
-                              <input type="submit" value="START" class="btn btn-success btn-block" role="button"/></input>
+                          <form id="sign" onsubmit="return false;">
+                              <input id="username" type="text" class="form-control" name="userName" required="true" placeholder="User name"></input><br>
+                              <label >
+                          		    <input id="single" type="radio" name="mode" value="single" checked> SINGLE QUIZ
+                          	  </label>
+                          	  <label >
+                          		    <input id="battle" type="radio" name="mode" value="battle"> ONE vs ONE BATTLE
+                          	  </label>
+                              <br><br>
+                              <button id="login" class="btn btn-success btn-block" role="button"/>START</button>
                           </form>
                       </div>
                   </div>
@@ -27,4 +33,7 @@
       </div>
   </div>
 
+{% endblock %}
+{% block javascript %}
+    <script src="{{ url_for('static', filename='js/login.js') }}" rel="stylesheet"></script>
 {% endblock %}

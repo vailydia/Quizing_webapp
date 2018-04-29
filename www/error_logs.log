@@ -1,0 +1,659 @@
+[2018-04-23 16:29:14 +0800] [58340] [INFO] Starting gunicorn 19.7.1
+[2018-04-23 16:29:14 +0800] [58340] [ERROR] Retrying in 1 second.
+[2018-04-23 16:29:15 +0800] [58340] [ERROR] Retrying in 1 second.
+[2018-04-23 16:29:16 +0800] [58340] [ERROR] Retrying in 1 second.
+[2018-04-23 16:29:17 +0800] [58340] [ERROR] Retrying in 1 second.
+[2018-04-23 16:29:18 +0800] [58340] [ERROR] Retrying in 1 second.
+[2018-04-23 16:29:19 +0800] [58340] [ERROR] Can't connect to ('localhost', 80)
+[2018-04-23 16:43:08 +0800] [58541] [INFO] Starting gunicorn 19.7.1
+[2018-04-23 16:43:08 +0800] [58541] [ERROR] Retrying in 1 second.
+[2018-04-23 16:43:09 +0800] [58541] [ERROR] Retrying in 1 second.
+[2018-04-23 16:43:10 +0800] [58541] [ERROR] Retrying in 1 second.
+[2018-04-23 16:43:11 +0800] [58541] [ERROR] Retrying in 1 second.
+[2018-04-23 16:43:12 +0800] [58541] [ERROR] Retrying in 1 second.
+[2018-04-23 16:43:13 +0800] [58541] [ERROR] Can't connect to ('localhost', 80)
+[2018-04-23 16:43:49 +0800] [58560] [INFO] Starting gunicorn 19.7.1
+[2018-04-23 16:43:49 +0800] [58560] [INFO] Listening at: http://127.0.0.1:8000 (58560)
+[2018-04-23 16:43:49 +0800] [58560] [INFO] Using worker: sync
+[2018-04-23 16:43:49 +0800] [58563] [INFO] Booting worker with pid: 58563
+[2018-04-23 16:43:49 +0800] [58565] [INFO] Booting worker with pid: 58565
+[2018-04-23 16:43:49 +0800] [58566] [INFO] Booting worker with pid: 58566
+[2018-04-23 16:43:49 +0800] [58567] [INFO] Booting worker with pid: 58567
+[2018-04-23 16:44:31 +0800] [58560] [CRITICAL] WORKER TIMEOUT (pid:58563)
+[2018-04-23 16:44:31 +0800] [58563] [INFO] Worker exiting (pid: 58563)
+[2018-04-23 16:44:32 +0800] [58578] [INFO] Booting worker with pid: 58578
+[2018-04-23 16:44:41 +0800] [58560] [CRITICAL] WORKER TIMEOUT (pid:58566)
+[2018-04-23 16:44:41 +0800] [58566] [INFO] Worker exiting (pid: 58566)
+[2018-04-23 16:44:41 +0800] [58581] [INFO] Booting worker with pid: 58581
+[2018-04-23 16:44:42 +0800] [58560] [CRITICAL] WORKER TIMEOUT (pid:58565)
+[2018-04-23 16:44:42 +0800] [58560] [CRITICAL] WORKER TIMEOUT (pid:58567)
+[2018-04-23 16:44:42 +0800] [58567] [INFO] Worker exiting (pid: 58567)
+[2018-04-23 16:44:42 +0800] [58565] [INFO] Worker exiting (pid: 58565)
+[2018-04-23 16:44:43 +0800] [58582] [INFO] Booting worker with pid: 58582
+[2018-04-23 16:44:43 +0800] [58583] [INFO] Booting worker with pid: 58583
+[2018-04-23 16:45:03 +0800] [58560] [CRITICAL] WORKER TIMEOUT (pid:58578)
+[2018-04-23 16:45:03 +0800] [58578] [INFO] Worker exiting (pid: 58578)
+[2018-04-23 16:45:03 +0800] [58587] [INFO] Booting worker with pid: 58587
+[2018-04-23 16:45:20 +0800] [58560] [CRITICAL] WORKER TIMEOUT (pid:58581)
+[2018-04-23 16:45:20 +0800] [58581] [INFO] Worker exiting (pid: 58581)
+[2018-04-23 16:45:20 +0800] [58592] [INFO] Booting worker with pid: 58592
+[2018-04-23 16:45:35 +0800] [58560] [CRITICAL] WORKER TIMEOUT (pid:58587)
+[2018-04-23 16:45:35 +0800] [58587] [INFO] Worker exiting (pid: 58587)
+[2018-04-23 16:45:35 +0800] [58596] [INFO] Booting worker with pid: 58596
+[2018-04-23 16:45:36 +0800] [58560] [INFO] Handling signal: int
+[2018-04-23 16:45:36 +0800] [58592] [INFO] Worker exiting (pid: 58592)
+[2018-04-23 16:45:36 +0800] [58596] [INFO] Worker exiting (pid: 58596)
+[2018-04-23 16:45:36 +0800] [58583] [INFO] Worker exiting (pid: 58583)
+[2018-04-23 16:45:36 +0800] [58582] [INFO] Worker exiting (pid: 58582)
+[2018-04-23 16:45:36 +0800] [58560] [INFO] Shutting down: Master
+[2018-04-23 16:45:59 +0800] [58615] [INFO] Starting gunicorn 19.7.1
+[2018-04-23 16:45:59 +0800] [58615] [INFO] Listening at: http://127.0.0.1:8000 (58615)
+[2018-04-23 16:45:59 +0800] [58615] [INFO] Using worker: sync
+[2018-04-23 16:45:59 +0800] [58619] [INFO] Booting worker with pid: 58619
+[2018-04-23 16:45:59 +0800] [58620] [INFO] Booting worker with pid: 58620
+[2018-04-23 16:45:59 +0800] [58622] [INFO] Booting worker with pid: 58622
+[2018-04-23 16:45:59 +0800] [58621] [INFO] Booting worker with pid: 58621
+[2018-04-23 16:46:50 +0800] [58615] [CRITICAL] WORKER TIMEOUT (pid:58619)
+[2018-04-23 16:46:50 +0800] [58619] [INFO] Worker exiting (pid: 58619)
+[2018-04-23 16:46:50 +0800] [58637] [INFO] Booting worker with pid: 58637
+[2018-04-23 16:46:52 +0800] [58615] [CRITICAL] WORKER TIMEOUT (pid:58622)
+[2018-04-23 16:46:52 +0800] [58622] [INFO] Worker exiting (pid: 58622)
+[2018-04-23 16:46:52 +0800] [58638] [INFO] Booting worker with pid: 58638
+[2018-04-23 16:46:54 +0800] [58615] [CRITICAL] WORKER TIMEOUT (pid:58621)
+[2018-04-23 16:46:54 +0800] [58621] [INFO] Worker exiting (pid: 58621)
+[2018-04-23 16:46:54 +0800] [58640] [INFO] Booting worker with pid: 58640
+[2018-04-23 16:46:55 +0800] [58640] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 191, in handle_request
+    six.reraise(*sys.exc_info())
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/six.py", line 625, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    resp.write_file(respiter)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 411, in write_file
+    if not self.sendfile(respiter):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 401, in sendfile
+    sent += sendfile(sockno, fileno, offset + sent, count)
+OSError: [Errno 57] Socket is not connected
+[2018-04-23 16:46:56 +0800] [58615] [CRITICAL] WORKER TIMEOUT (pid:58620)
+[2018-04-23 16:46:56 +0800] [58620] [INFO] Worker exiting (pid: 58620)
+[2018-04-23 16:46:56 +0800] [58641] [INFO] Booting worker with pid: 58641
+[2018-04-23 16:47:22 +0800] [58615] [CRITICAL] WORKER TIMEOUT (pid:58637)
+[2018-04-23 16:47:22 +0800] [58637] [INFO] Worker exiting (pid: 58637)
+[2018-04-23 16:47:22 +0800] [58651] [INFO] Booting worker with pid: 58651
+[2018-04-23 16:47:23 +0800] [58615] [CRITICAL] WORKER TIMEOUT (pid:58638)
+[2018-04-23 16:47:23 +0800] [58638] [INFO] Worker exiting (pid: 58638)
+[2018-04-23 16:47:24 +0800] [58652] [INFO] Booting worker with pid: 58652
+[2018-04-23 16:47:26 +0800] [58615] [CRITICAL] WORKER TIMEOUT (pid:58640)
+[2018-04-23 16:47:26 +0800] [58640] [INFO] Worker exiting (pid: 58640)
+[2018-04-23 16:47:26 +0800] [58653] [INFO] Booting worker with pid: 58653
+[2018-04-23 16:47:58 +0800] [58615] [CRITICAL] WORKER TIMEOUT (pid:58641)
+[2018-04-23 16:47:58 +0800] [58615] [CRITICAL] WORKER TIMEOUT (pid:58651)
+[2018-04-23 16:47:58 +0800] [58615] [CRITICAL] WORKER TIMEOUT (pid:58652)
+[2018-04-23 16:47:58 +0800] [58615] [CRITICAL] WORKER TIMEOUT (pid:58653)
+[2018-04-23 16:47:58 +0800] [58641] [INFO] Worker exiting (pid: 58641)
+[2018-04-23 16:47:58 +0800] [58651] [INFO] Worker exiting (pid: 58651)
+[2018-04-23 16:47:58 +0800] [58653] [INFO] Worker exiting (pid: 58653)
+[2018-04-23 16:47:58 +0800] [58652] [INFO] Worker exiting (pid: 58652)
+[2018-04-23 16:47:59 +0800] [58660] [INFO] Booting worker with pid: 58660
+[2018-04-23 16:47:59 +0800] [58661] [INFO] Booting worker with pid: 58661
+[2018-04-23 16:47:59 +0800] [58662] [INFO] Booting worker with pid: 58662
+[2018-04-23 16:47:59 +0800] [58663] [INFO] Booting worker with pid: 58663
+[2018-04-23 16:48:06 +0800] [58615] [INFO] Handling signal: int
+[2018-04-23 16:48:06 +0800] [58662] [INFO] Worker exiting (pid: 58662)
+[2018-04-23 16:48:06 +0800] [58660] [INFO] Worker exiting (pid: 58660)
+[2018-04-23 16:48:06 +0800] [58663] [INFO] Worker exiting (pid: 58663)
+[2018-04-23 16:48:06 +0800] [58661] [INFO] Worker exiting (pid: 58661)
+[2018-04-23 16:48:06 +0800] [58615] [INFO] Shutting down: Master
+[2018-04-23 16:48:15 +0800] [58680] [INFO] Starting gunicorn 19.7.1
+[2018-04-23 16:48:15 +0800] [58680] [INFO] Listening at: http://127.0.0.1:8000 (58680)
+[2018-04-23 16:48:15 +0800] [58680] [INFO] Using worker: sync
+[2018-04-23 16:48:15 +0800] [58683] [INFO] Booting worker with pid: 58683
+[2018-04-23 16:48:15 +0800] [58685] [INFO] Booting worker with pid: 58685
+[2018-04-23 16:48:15 +0800] [58686] [INFO] Booting worker with pid: 58686
+[2018-04-23 16:48:15 +0800] [58687] [INFO] Booting worker with pid: 58687
+[2018-04-23 16:49:17 +0800] [58680] [CRITICAL] WORKER TIMEOUT (pid:58685)
+[2018-04-23 16:49:17 +0800] [58685] [INFO] Worker exiting (pid: 58685)
+[2018-04-23 16:49:17 +0800] [58701] [INFO] Booting worker with pid: 58701
+[2018-04-23 16:49:20 +0800] [58680] [CRITICAL] WORKER TIMEOUT (pid:58683)
+[2018-04-23 16:49:20 +0800] [58683] [INFO] Worker exiting (pid: 58683)
+[2018-04-23 16:49:20 +0800] [58702] [INFO] Booting worker with pid: 58702
+[2018-04-23 16:49:29 +0800] [58680] [CRITICAL] WORKER TIMEOUT (pid:58686)
+[2018-04-23 16:49:29 +0800] [58686] [INFO] Worker exiting (pid: 58686)
+[2018-04-23 16:49:30 +0800] [58704] [INFO] Booting worker with pid: 58704
+[2018-04-23 16:49:32 +0800] [58680] [CRITICAL] WORKER TIMEOUT (pid:58687)
+[2018-04-23 16:49:32 +0800] [58687] [INFO] Worker exiting (pid: 58687)
+[2018-04-23 16:49:32 +0800] [58705] [INFO] Booting worker with pid: 58705
+[2018-04-23 16:50:59 +0800] [58680] [INFO] Handling signal: int
+[2018-04-23 16:50:59 +0800] [58701] [INFO] Worker exiting (pid: 58701)
+[2018-04-23 16:50:59 +0800] [58704] [INFO] Worker exiting (pid: 58704)
+[2018-04-23 16:50:59 +0800] [58702] [INFO] Worker exiting (pid: 58702)
+[2018-04-23 16:50:59 +0800] [58705] [INFO] Worker exiting (pid: 58705)
+[2018-04-23 16:51:00 +0800] [58680] [INFO] Shutting down: Master
+[2018-04-23 16:52:10 +0800] [58758] [INFO] Starting gunicorn 19.7.1
+[2018-04-23 16:52:10 +0800] [58758] [INFO] Listening at: http://127.0.0.1:8000 (58758)
+[2018-04-23 16:52:10 +0800] [58758] [INFO] Using worker: gevent
+[2018-04-23 16:52:10 +0800] [58762] [INFO] Booting worker with pid: 58762
+[2018-04-23 16:52:10 +0800] [58763] [INFO] Booting worker with pid: 58763
+[2018-04-23 16:52:10 +0800] [58764] [INFO] Booting worker with pid: 58764
+[2018-04-23 16:52:10 +0800] [58765] [INFO] Booting worker with pid: 58765
+[2018-04-23 16:53:01 +0800] [58758] [CRITICAL] WORKER TIMEOUT (pid:58765)
+[2018-04-23 16:53:01 +0800] [58765] [INFO] Worker exiting (pid: 58765)
+[2018-04-23 16:53:01 +0800] [58777] [INFO] Booting worker with pid: 58777
+[2018-04-23 16:53:02 +0800] [58758] [CRITICAL] WORKER TIMEOUT (pid:58764)
+[2018-04-23 16:53:02 +0800] [58764] [INFO] Worker exiting (pid: 58764)
+[2018-04-23 16:53:03 +0800] [58778] [INFO] Booting worker with pid: 58778
+[2018-04-23 16:53:07 +0800] [58758] [CRITICAL] WORKER TIMEOUT (pid:58762)
+[2018-04-23 16:53:07 +0800] [58762] [INFO] Worker exiting (pid: 58762)
+[2018-04-23 16:53:07 +0800] [58780] [INFO] Booting worker with pid: 58780
+[2018-04-23 16:53:34 +0800] [58758] [CRITICAL] WORKER TIMEOUT (pid:58763)
+[2018-04-23 16:53:34 +0800] [58763] [INFO] Worker exiting (pid: 58763)
+[2018-04-23 16:53:34 +0800] [58785] [INFO] Booting worker with pid: 58785
+[2018-04-23 16:53:36 +0800] [58758] [CRITICAL] WORKER TIMEOUT (pid:58777)
+[2018-04-23 16:53:36 +0800] [58777] [INFO] Worker exiting (pid: 58777)
+[2018-04-23 16:53:36 +0800] [58786] [INFO] Booting worker with pid: 58786
+[2018-04-23 17:04:35 +0800] [58758] [INFO] Handling signal: int
+[2018-04-23 17:04:35 +0800] [58780] [INFO] Worker exiting (pid: 58780)
+[2018-04-23 17:04:35 +0800] [58785] [INFO] Worker exiting (pid: 58785)
+[2018-04-23 17:04:35 +0800] [58778] [INFO] Worker exiting (pid: 58778)
+[2018-04-23 17:04:35 +0800] [58786] [INFO] Worker exiting (pid: 58786)
+[2018-04-23 17:04:35 +0800] [58758] [INFO] Shutting down: Master
+[2018-04-23 17:06:10 +0800] [58992] [INFO] Starting gunicorn 19.7.1
+[2018-04-23 17:06:10 +0800] [58992] [INFO] Listening at: http://127.0.0.1:8000 (58992)
+[2018-04-23 17:06:10 +0800] [58992] [INFO] Using worker: gevent
+[2018-04-23 17:06:10 +0800] [58996] [INFO] Booting worker with pid: 58996
+[2018-04-23 17:06:10 +0800] [58997] [INFO] Booting worker with pid: 58997
+[2018-04-23 17:06:10 +0800] [58998] [INFO] Booting worker with pid: 58998
+[2018-04-23 17:06:10 +0800] [58999] [INFO] Booting worker with pid: 58999
+[2018-04-23 17:06:48 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:58998)
+[2018-04-23 17:06:48 +0800] [58998] [INFO] Worker exiting (pid: 58998)
+[2018-04-23 17:06:48 +0800] [58998] [ERROR] Error handling request /socket.io/?EIO=3&transport=websocket&sid=64eae8c4caeb4a7aace7cf1ca0187089
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/async.py", line 56, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/ggevent.py", line 152, in handle_request
+    super(GeventWorker, self).handle_request(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/async.py", line 116, in handle_request
+    resp.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 417, in close
+    self.send_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 333, in send_headers
+    tosend = self.default_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 314, in default_headers
+    elif self.should_close():
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 237, in should_close
+    if self.status_code < 200 or self.status_code in (204, 304):
+AttributeError: 'Response' object has no attribute 'status_code'
+[2018-04-23 17:06:48 +0800] [59014] [INFO] Booting worker with pid: 59014
+[2018-04-23 17:07:05 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:58997)
+[2018-04-23 17:07:05 +0800] [58997] [INFO] Worker exiting (pid: 58997)
+[2018-04-23 17:07:05 +0800] [59016] [INFO] Booting worker with pid: 59016
+[2018-04-23 17:07:06 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:58996)
+[2018-04-23 17:07:06 +0800] [58996] [INFO] Worker exiting (pid: 58996)
+[2018-04-23 17:07:06 +0800] [59017] [INFO] Booting worker with pid: 59017
+[2018-04-23 17:07:11 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:58999)
+[2018-04-23 17:07:11 +0800] [58999] [INFO] Worker exiting (pid: 58999)
+[2018-04-23 17:07:11 +0800] [59020] [INFO] Booting worker with pid: 59020
+[2018-04-23 17:07:19 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59014)
+[2018-04-23 17:07:19 +0800] [59014] [INFO] Worker exiting (pid: 59014)
+[2018-04-23 17:07:19 +0800] [59025] [INFO] Booting worker with pid: 59025
+[2018-04-23 17:07:36 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59016)
+[2018-04-23 17:07:36 +0800] [59016] [INFO] Worker exiting (pid: 59016)
+[2018-04-23 17:07:36 +0800] [59028] [INFO] Booting worker with pid: 59028
+[2018-04-23 17:08:02 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59017)
+[2018-04-23 17:08:02 +0800] [59017] [INFO] Worker exiting (pid: 59017)
+[2018-04-23 17:08:02 +0800] [59033] [INFO] Booting worker with pid: 59033
+[2018-04-23 17:08:03 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59025)
+[2018-04-23 17:08:03 +0800] [59025] [INFO] Worker exiting (pid: 59025)
+[2018-04-23 17:08:03 +0800] [59034] [INFO] Booting worker with pid: 59034
+[2018-04-23 17:08:04 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59020)
+[2018-04-23 17:08:04 +0800] [59020] [INFO] Worker exiting (pid: 59020)
+[2018-04-23 17:08:04 +0800] [59035] [INFO] Booting worker with pid: 59035
+[2018-04-23 17:08:07 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59028)
+[2018-04-23 17:08:07 +0800] [59028] [INFO] Worker exiting (pid: 59028)
+[2018-04-23 17:08:07 +0800] [59037] [INFO] Booting worker with pid: 59037
+[2018-04-23 17:09:30 +0800] [59034] [ERROR] Error handling request /socket.io/?EIO=3&transport=websocket&sid=46a800e366e44e479373e2a0aa32f824
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/async.py", line 56, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/ggevent.py", line 152, in handle_request
+    super(GeventWorker, self).handle_request(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/async.py", line 116, in handle_request
+    resp.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 417, in close
+    self.send_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 333, in send_headers
+    tosend = self.default_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 314, in default_headers
+    elif self.should_close():
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 237, in should_close
+    if self.status_code < 200 or self.status_code in (204, 304):
+AttributeError: 'Response' object has no attribute 'status_code'
+[2018-04-23 17:09:44 +0800] [59037] [ERROR] Error handling request /socket.io/?EIO=3&transport=websocket&sid=cd87e122193540e480806a50e02b17bd
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/async.py", line 56, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/ggevent.py", line 152, in handle_request
+    super(GeventWorker, self).handle_request(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/async.py", line 116, in handle_request
+    resp.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 417, in close
+    self.send_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 333, in send_headers
+    tosend = self.default_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 314, in default_headers
+    elif self.should_close():
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 237, in should_close
+    if self.status_code < 200 or self.status_code in (204, 304):
+AttributeError: 'Response' object has no attribute 'status_code'
+[2018-04-23 17:09:59 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59034)
+[2018-04-23 17:09:59 +0800] [59034] [INFO] Worker exiting (pid: 59034)
+[2018-04-23 17:09:59 +0800] [59057] [INFO] Booting worker with pid: 59057
+[2018-04-23 17:10:06 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59035)
+[2018-04-23 17:10:06 +0800] [59035] [INFO] Worker exiting (pid: 59035)
+[2018-04-23 17:10:06 +0800] [59058] [INFO] Booting worker with pid: 59058
+[2018-04-23 17:10:16 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59037)
+[2018-04-23 17:10:16 +0800] [59037] [INFO] Worker exiting (pid: 59037)
+[2018-04-23 17:10:16 +0800] [59061] [INFO] Booting worker with pid: 59061
+[2018-04-23 17:10:18 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59033)
+[2018-04-23 17:10:18 +0800] [59033] [INFO] Worker exiting (pid: 59033)
+[2018-04-23 17:10:18 +0800] [59064] [INFO] Booting worker with pid: 59064
+[2018-04-23 17:10:20 +0800] [59064] [ERROR] Error handling request /socket.io/?EIO=3&transport=websocket&sid=9b9367b17be14b67a1f27e3124c3a783
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/async.py", line 56, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/ggevent.py", line 152, in handle_request
+    super(GeventWorker, self).handle_request(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/async.py", line 116, in handle_request
+    resp.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 417, in close
+    self.send_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 333, in send_headers
+    tosend = self.default_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 314, in default_headers
+    elif self.should_close():
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 237, in should_close
+    if self.status_code < 200 or self.status_code in (204, 304):
+AttributeError: 'Response' object has no attribute 'status_code'
+[2018-04-23 17:10:32 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59057)
+[2018-04-23 17:10:32 +0800] [59057] [INFO] Worker exiting (pid: 59057)
+[2018-04-23 17:10:32 +0800] [59067] [INFO] Booting worker with pid: 59067
+[2018-04-23 17:10:38 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59058)
+[2018-04-23 17:10:38 +0800] [59058] [INFO] Worker exiting (pid: 59058)
+[2018-04-23 17:10:38 +0800] [59070] [INFO] Booting worker with pid: 59070
+[2018-04-23 17:10:50 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59064)
+[2018-04-23 17:10:50 +0800] [59064] [INFO] Worker exiting (pid: 59064)
+[2018-04-23 17:10:50 +0800] [59074] [INFO] Booting worker with pid: 59074
+[2018-04-23 17:10:52 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59061)
+[2018-04-23 17:10:52 +0800] [59061] [INFO] Worker exiting (pid: 59061)
+[2018-04-23 17:10:52 +0800] [59075] [INFO] Booting worker with pid: 59075
+[2018-04-23 17:10:54 +0800] [59074] [ERROR] Error handling request /socket.io/?EIO=3&transport=websocket&sid=a162643b438b44e3b0441ebff8c7d513
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/async.py", line 56, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/ggevent.py", line 152, in handle_request
+    super(GeventWorker, self).handle_request(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/async.py", line 116, in handle_request
+    resp.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 417, in close
+    self.send_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 333, in send_headers
+    tosend = self.default_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 314, in default_headers
+    elif self.should_close():
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 237, in should_close
+    if self.status_code < 200 or self.status_code in (204, 304):
+AttributeError: 'Response' object has no attribute 'status_code'
+[2018-04-23 17:11:00 +0800] [59074] [ERROR] Error handling request /socket.io/?EIO=3&transport=websocket&sid=b3745908aea54e999701d325a7afbd2d
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/async.py", line 56, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/ggevent.py", line 152, in handle_request
+    super(GeventWorker, self).handle_request(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/async.py", line 116, in handle_request
+    resp.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 417, in close
+    self.send_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 333, in send_headers
+    tosend = self.default_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 314, in default_headers
+    elif self.should_close():
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 237, in should_close
+    if self.status_code < 200 or self.status_code in (204, 304):
+AttributeError: 'Response' object has no attribute 'status_code'
+[2018-04-23 17:11:04 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59067)
+[2018-04-23 17:11:04 +0800] [59067] [INFO] Worker exiting (pid: 59067)
+[2018-04-23 17:11:04 +0800] [59077] [INFO] Booting worker with pid: 59077
+[2018-04-23 17:11:10 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59070)
+[2018-04-23 17:11:10 +0800] [59070] [INFO] Worker exiting (pid: 59070)
+[2018-04-23 17:11:10 +0800] [59080] [INFO] Booting worker with pid: 59080
+[2018-04-23 17:11:31 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59074)
+[2018-04-23 17:11:31 +0800] [59074] [INFO] Worker exiting (pid: 59074)
+[2018-04-23 17:11:31 +0800] [59074] [ERROR] Error handling request /socket.io/?EIO=3&transport=websocket&sid=c2bc6a02cf1745fd8a8abc284536f38d
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/async.py", line 56, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/ggevent.py", line 152, in handle_request
+    super(GeventWorker, self).handle_request(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/async.py", line 116, in handle_request
+    resp.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 417, in close
+    self.send_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 333, in send_headers
+    tosend = self.default_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 314, in default_headers
+    elif self.should_close():
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 237, in should_close
+    if self.status_code < 200 or self.status_code in (204, 304):
+AttributeError: 'Response' object has no attribute 'status_code'
+[2018-04-23 17:11:31 +0800] [59087] [INFO] Booting worker with pid: 59087
+[2018-04-23 17:11:33 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59075)
+[2018-04-23 17:11:33 +0800] [59075] [INFO] Worker exiting (pid: 59075)
+[2018-04-23 17:11:33 +0800] [59088] [INFO] Booting worker with pid: 59088
+[2018-04-23 17:11:35 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59077)
+[2018-04-23 17:11:35 +0800] [59077] [INFO] Worker exiting (pid: 59077)
+[2018-04-23 17:11:36 +0800] [59089] [INFO] Booting worker with pid: 59089
+[2018-04-23 17:11:41 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59080)
+[2018-04-23 17:11:41 +0800] [59080] [INFO] Worker exiting (pid: 59080)
+[2018-04-23 17:11:41 +0800] [59091] [INFO] Booting worker with pid: 59091
+[2018-04-23 17:12:02 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59087)
+[2018-04-23 17:12:02 +0800] [59087] [INFO] Worker exiting (pid: 59087)
+[2018-04-23 17:12:02 +0800] [59095] [INFO] Booting worker with pid: 59095
+[2018-04-23 17:12:30 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59091)
+[2018-04-23 17:12:30 +0800] [59091] [INFO] Worker exiting (pid: 59091)
+[2018-04-23 17:12:30 +0800] [59101] [INFO] Booting worker with pid: 59101
+[2018-04-23 17:12:36 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59089)
+[2018-04-23 17:12:36 +0800] [59089] [INFO] Worker exiting (pid: 59089)
+[2018-04-23 17:12:36 +0800] [59102] [INFO] Booting worker with pid: 59102
+[2018-04-23 17:12:38 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59095)
+[2018-04-23 17:12:38 +0800] [59095] [INFO] Worker exiting (pid: 59095)
+[2018-04-23 17:12:38 +0800] [59105] [INFO] Booting worker with pid: 59105
+[2018-04-23 17:12:41 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59088)
+[2018-04-23 17:12:41 +0800] [59088] [INFO] Worker exiting (pid: 59088)
+[2018-04-23 17:12:42 +0800] [59106] [INFO] Booting worker with pid: 59106
+[2018-04-23 17:12:52 +0800] [59105] [ERROR] Error handling request /socket.io/?EIO=3&transport=websocket&sid=6b46589a986943eb88be67acab58fcb4
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/async.py", line 56, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/ggevent.py", line 152, in handle_request
+    super(GeventWorker, self).handle_request(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/async.py", line 116, in handle_request
+    resp.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 417, in close
+    self.send_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 333, in send_headers
+    tosend = self.default_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 314, in default_headers
+    elif self.should_close():
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 237, in should_close
+    if self.status_code < 200 or self.status_code in (204, 304):
+AttributeError: 'Response' object has no attribute 'status_code'
+[2018-04-23 17:13:10 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59102)
+[2018-04-23 17:13:10 +0800] [59102] [INFO] Worker exiting (pid: 59102)
+[2018-04-23 17:13:10 +0800] [59122] [INFO] Booting worker with pid: 59122
+[2018-04-23 17:13:26 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59105)
+[2018-04-23 17:13:26 +0800] [59105] [INFO] Worker exiting (pid: 59105)
+[2018-04-23 17:13:26 +0800] [59126] [INFO] Booting worker with pid: 59126
+[2018-04-23 17:13:29 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59101)
+[2018-04-23 17:13:29 +0800] [59101] [INFO] Worker exiting (pid: 59101)
+[2018-04-23 17:13:29 +0800] [59128] [INFO] Booting worker with pid: 59128
+[2018-04-23 17:13:32 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59106)
+[2018-04-23 17:13:32 +0800] [59106] [INFO] Worker exiting (pid: 59106)
+[2018-04-23 17:13:32 +0800] [59129] [INFO] Booting worker with pid: 59129
+[2018-04-23 17:14:38 +0800] [59122] [ERROR] Error handling request /socket.io/?EIO=3&transport=websocket&sid=5e82d2528aaa4e41a0f7c91c6e18c05c
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/async.py", line 56, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/ggevent.py", line 152, in handle_request
+    super(GeventWorker, self).handle_request(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/async.py", line 116, in handle_request
+    resp.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 417, in close
+    self.send_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 333, in send_headers
+    tosend = self.default_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 314, in default_headers
+    elif self.should_close():
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 237, in should_close
+    if self.status_code < 200 or self.status_code in (204, 304):
+AttributeError: 'Response' object has no attribute 'status_code'
+[2018-04-23 17:15:07 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59122)
+[2018-04-23 17:15:07 +0800] [59122] [INFO] Worker exiting (pid: 59122)
+[2018-04-23 17:15:07 +0800] [59154] [INFO] Booting worker with pid: 59154
+[2018-04-23 17:15:13 +0800] [58992] [CRITICAL] WORKER TIMEOUT (pid:59126)
+[2018-04-23 17:15:13 +0800] [59126] [INFO] Worker exiting (pid: 59126)
+[2018-04-23 17:15:13 +0800] [59156] [INFO] Booting worker with pid: 59156
+[2018-04-23 17:15:23 +0800] [58992] [INFO] Handling signal: int
+[2018-04-23 17:15:30 +0800] [58992] [INFO] Shutting down: Master
+[2018-04-23 17:15:56 +0800] [59505] [INFO] Starting gunicorn 19.7.1
+[2018-04-23 17:15:56 +0800] [59505] [INFO] Listening at: http://127.0.0.1:8000 (59505)
+[2018-04-23 17:15:56 +0800] [59505] [INFO] Using worker: gevent
+[2018-04-23 17:15:56 +0800] [59509] [INFO] Booting worker with pid: 59509
+[2018-04-23 17:16:29 +0800] [59505] [CRITICAL] WORKER TIMEOUT (pid:59509)
+[2018-04-23 17:16:29 +0800] [59509] [INFO] Worker exiting (pid: 59509)
+[2018-04-23 17:16:29 +0800] [59509] [ERROR] Error handling request /socket.io/?EIO=3&transport=websocket&sid=b8fa296c8ed54a1eb39c885f11efcb5c
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/async.py", line 56, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/ggevent.py", line 152, in handle_request
+    super(GeventWorker, self).handle_request(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/async.py", line 116, in handle_request
+    resp.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 417, in close
+    self.send_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 333, in send_headers
+    tosend = self.default_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 314, in default_headers
+    elif self.should_close():
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 237, in should_close
+    if self.status_code < 200 or self.status_code in (204, 304):
+AttributeError: 'Response' object has no attribute 'status_code'
+[2018-04-23 17:16:29 +0800] [59520] [INFO] Booting worker with pid: 59520
+[2018-04-23 17:17:03 +0800] [59505] [CRITICAL] WORKER TIMEOUT (pid:59520)
+[2018-04-23 17:17:03 +0800] [59520] [INFO] Worker exiting (pid: 59520)
+[2018-04-23 17:17:03 +0800] [59529] [INFO] Booting worker with pid: 59529
+[2018-04-23 17:20:12 +0800] [59529] [ERROR] Error handling request /socket.io/?EIO=3&transport=websocket&sid=6b0981f651994de59dc6cc7f6d4e7961
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/async.py", line 56, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/ggevent.py", line 152, in handle_request
+    super(GeventWorker, self).handle_request(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/async.py", line 116, in handle_request
+    resp.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 417, in close
+    self.send_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 333, in send_headers
+    tosend = self.default_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 314, in default_headers
+    elif self.should_close():
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 237, in should_close
+    if self.status_code < 200 or self.status_code in (204, 304):
+AttributeError: 'Response' object has no attribute 'status_code'
+[2018-04-23 17:20:41 +0800] [59505] [CRITICAL] WORKER TIMEOUT (pid:59529)
+[2018-04-23 17:20:41 +0800] [59529] [INFO] Worker exiting (pid: 59529)
+[2018-04-23 17:20:41 +0800] [59677] [INFO] Booting worker with pid: 59677
+[2018-04-23 17:21:12 +0800] [59505] [CRITICAL] WORKER TIMEOUT (pid:59677)
+[2018-04-23 17:21:12 +0800] [59677] [INFO] Worker exiting (pid: 59677)
+[2018-04-23 17:21:12 +0800] [59685] [INFO] Booting worker with pid: 59685
+[2018-04-23 17:22:15 +0800] [59505] [INFO] Handling signal: int
+[2018-04-23 17:22:15 +0800] [59685] [INFO] Worker exiting (pid: 59685)
+[2018-04-23 17:22:15 +0800] [59505] [INFO] Shutting down: Master
+[2018-04-23 17:54:24 +0800] [60206] [INFO] Starting gunicorn 19.7.1
+[2018-04-23 17:54:24 +0800] [60206] [INFO] Listening at: http://127.0.0.1:8000 (60206)
+[2018-04-23 17:54:24 +0800] [60206] [INFO] Using worker: gevent
+[2018-04-23 17:54:24 +0800] [60210] [INFO] Booting worker with pid: 60210
+[2018-04-23 17:55:06 +0800] [60206] [CRITICAL] WORKER TIMEOUT (pid:60210)
+[2018-04-23 17:55:06 +0800] [60210] [INFO] Worker exiting (pid: 60210)
+[2018-04-23 17:55:06 +0800] [60225] [INFO] Booting worker with pid: 60225
+[2018-04-23 17:55:43 +0800] [60206] [CRITICAL] WORKER TIMEOUT (pid:60225)
+[2018-04-23 17:55:43 +0800] [60225] [INFO] Worker exiting (pid: 60225)
+[2018-04-23 17:55:43 +0800] [60233] [INFO] Booting worker with pid: 60233
+[2018-04-23 17:55:57 +0800] [60206] [INFO] Handling signal: int
+[2018-04-23 17:55:57 +0800] [60233] [INFO] Worker exiting (pid: 60233)
+[2018-04-23 17:55:57 +0800] [60206] [INFO] Shutting down: Master
+[2018-04-23 18:01:38 +0800] [60365] [INFO] Starting gunicorn 19.7.1
+[2018-04-23 18:01:38 +0800] [60365] [INFO] Listening at: http://127.0.0.1:8000 (60365)
+[2018-04-23 18:01:38 +0800] [60365] [INFO] Using worker: gevent
+[2018-04-23 18:01:38 +0800] [60369] [INFO] Booting worker with pid: 60369
+[2018-04-23 18:02:17 +0800] [60365] [CRITICAL] WORKER TIMEOUT (pid:60369)
+[2018-04-23 18:02:17 +0800] [60369] [INFO] Worker exiting (pid: 60369)
+[2018-04-23 18:02:17 +0800] [60384] [INFO] Booting worker with pid: 60384
+[2018-04-23 18:02:26 +0800] [60365] [INFO] Handling signal: int
+[2018-04-23 18:02:26 +0800] [60384] [INFO] Worker exiting (pid: 60384)
+[2018-04-23 18:02:26 +0800] [60365] [INFO] Shutting down: Master
+[2018-04-23 18:02:29 +0800] [60391] [INFO] Starting gunicorn 19.7.1
+[2018-04-23 18:02:29 +0800] [60391] [INFO] Listening at: http://127.0.0.1:8000 (60391)
+[2018-04-23 18:02:29 +0800] [60391] [INFO] Using worker: gevent
+[2018-04-23 18:02:29 +0800] [60395] [INFO] Booting worker with pid: 60395
+[2018-04-23 18:03:09 +0800] [60391] [CRITICAL] WORKER TIMEOUT (pid:60395)
+[2018-04-23 18:03:09 +0800] [60395] [INFO] Worker exiting (pid: 60395)
+[2018-04-23 18:03:09 +0800] [60407] [INFO] Booting worker with pid: 60407
+[2018-04-23 18:03:44 +0800] [60391] [INFO] Handling signal: int
+[2018-04-23 18:03:45 +0800] [60407] [INFO] Worker exiting (pid: 60407)
+[2018-04-23 18:03:45 +0800] [60391] [INFO] Shutting down: Master
+[2018-04-23 18:08:44 +0800] [60506] [INFO] Starting gunicorn 19.7.1
+[2018-04-23 18:08:44 +0800] [60506] [INFO] Listening at: http://127.0.0.1:8000 (60506)
+[2018-04-23 18:08:44 +0800] [60506] [INFO] Using worker: sync
+[2018-04-23 18:08:44 +0800] [60510] [INFO] Booting worker with pid: 60510
+[2018-04-23 18:09:15 +0800] [60506] [CRITICAL] WORKER TIMEOUT (pid:60510)
+[2018-04-23 18:09:15 +0800] [60510] [INFO] Worker exiting (pid: 60510)
+[2018-04-23 18:09:16 +0800] [60520] [INFO] Booting worker with pid: 60520
+[2018-04-23 18:09:49 +0800] [60506] [CRITICAL] WORKER TIMEOUT (pid:60520)
+[2018-04-23 18:09:49 +0800] [60520] [INFO] Worker exiting (pid: 60520)
+[2018-04-23 18:09:50 +0800] [60530] [INFO] Booting worker with pid: 60530
+[2018-04-23 18:10:21 +0800] [60506] [CRITICAL] WORKER TIMEOUT (pid:60530)
+[2018-04-23 18:10:21 +0800] [60530] [INFO] Worker exiting (pid: 60530)
+[2018-04-23 18:10:21 +0800] [60538] [INFO] Booting worker with pid: 60538
+[2018-04-23 18:10:53 +0800] [60506] [CRITICAL] WORKER TIMEOUT (pid:60538)
+[2018-04-23 18:10:53 +0800] [60538] [INFO] Worker exiting (pid: 60538)
+[2018-04-23 18:10:53 +0800] [60545] [INFO] Booting worker with pid: 60545
+[2018-04-23 18:11:12 +0800] [60545] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 191, in handle_request
+    six.reraise(*sys.exc_info())
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/six.py", line 625, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 183, in handle_request
+    resp.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 417, in close
+    self.send_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "ascii"))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/util.py", line 306, in write
+    sock.sendall(data)
+OSError: [Errno 9] Bad file descriptor
+[2018-04-23 18:11:38 +0800] [60545] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 191, in handle_request
+    six.reraise(*sys.exc_info())
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/six.py", line 625, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 183, in handle_request
+    resp.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 417, in close
+    self.send_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "ascii"))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/util.py", line 306, in write
+    sock.sendall(data)
+OSError: [Errno 9] Bad file descriptor
+[2018-04-23 18:11:41 +0800] [60545] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 191, in handle_request
+    six.reraise(*sys.exc_info())
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/six.py", line 625, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 183, in handle_request
+    resp.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 417, in close
+    self.send_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "ascii"))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/util.py", line 306, in write
+    sock.sendall(data)
+OSError: [Errno 9] Bad file descriptor
+[2018-04-23 18:11:49 +0800] [60545] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 191, in handle_request
+    six.reraise(*sys.exc_info())
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/six.py", line 625, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 183, in handle_request
+    resp.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 417, in close
+    self.send_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "ascii"))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/util.py", line 306, in write
+    sock.sendall(data)
+OSError: [Errno 9] Bad file descriptor
+[2018-04-23 18:12:07 +0800] [60545] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 191, in handle_request
+    six.reraise(*sys.exc_info())
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/six.py", line 625, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 183, in handle_request
+    resp.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 417, in close
+    self.send_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "ascii"))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/gunicorn/util.py", line 306, in write
+    sock.sendall(data)
+OSError: [Errno 9] Bad file descriptor
+[2018-04-23 18:12:36 +0800] [60506] [INFO] Handling signal: int
+[2018-04-23 18:12:36 +0800] [60545] [INFO] Worker exiting (pid: 60545)
+[2018-04-23 18:12:36 +0800] [60506] [INFO] Shutting down: Master
+[2018-04-23 19:05:17 +0800] [60968] [INFO] Starting gunicorn 19.7.1
+[2018-04-23 19:05:17 +0800] [60968] [INFO] Listening at: http://127.0.0.1:8000 (60968)
+[2018-04-23 19:05:17 +0800] [60968] [INFO] Using worker: sync
+[2018-04-23 19:05:17 +0800] [60972] [INFO] Booting worker with pid: 60972
+[2018-04-23 19:05:49 +0800] [60968] [CRITICAL] WORKER TIMEOUT (pid:60972)
+[2018-04-23 19:05:49 +0800] [60972] [INFO] Worker exiting (pid: 60972)
+[2018-04-23 19:05:49 +0800] [60968] [INFO] Handling signal: int
+[2018-04-23 19:05:49 +0800] [60968] [INFO] Shutting down: Master
+[2018-04-23 19:16:15 +0800] [61094] [INFO] Starting gunicorn 19.7.1
+[2018-04-23 19:16:15 +0800] [61094] [INFO] Listening at: http://127.0.0.1:8000 (61094)
+[2018-04-23 19:16:15 +0800] [61094] [INFO] Using worker: sync
+[2018-04-23 19:16:15 +0800] [61099] [INFO] Booting worker with pid: 61099
+[2018-04-23 19:16:16 +0800] [61094] [INFO] Handling signal: int
+[2018-04-23 19:16:16 +0800] [61099] [INFO] Worker exiting (pid: 61099)
+[2018-04-23 19:16:16 +0800] [61094] [INFO] Shutting down: Master
+[2018-04-23 23:49:23 +0800] [63982] [INFO] Starting gunicorn 19.7.1
+[2018-04-23 23:49:23 +0800] [63982] [INFO] Listening at: http://127.0.0.1:8000 (63982)
+[2018-04-23 23:49:23 +0800] [63982] [INFO] Using worker: eventlet
+[2018-04-23 23:49:23 +0800] [63986] [INFO] Booting worker with pid: 63986
+[2018-04-23 23:49:54 +0800] [63982] [INFO] Handling signal: int
+[2018-04-23 23:49:54 +0800] [63986] [INFO] Worker exiting (pid: 63986)
+[2018-04-23 23:49:54 +0800] [63982] [INFO] Shutting down: Master
+[2018-04-23 23:50:03 +0800] [63994] [INFO] Starting gunicorn 19.7.1
+[2018-04-23 23:50:03 +0800] [63994] [INFO] Listening at: http://127.0.0.1:8000 (63994)
+[2018-04-23 23:50:03 +0800] [63994] [INFO] Using worker: eventlet
+[2018-04-23 23:50:03 +0800] [64000] [INFO] Booting worker with pid: 64000
+[2018-04-23 23:50:03 +0800] [64001] [INFO] Booting worker with pid: 64001
+[2018-04-23 23:57:26 +0800] [63994] [INFO] Handling signal: int
+[2018-04-23 23:57:26 +0800] [64000] [INFO] Worker exiting (pid: 64000)
+[2018-04-23 23:57:26 +0800] [64001] [INFO] Worker exiting (pid: 64001)
+[2018-04-23 23:57:26 +0800] [63994] [INFO] Shutting down: Master
+[2018-04-24 00:10:33 +0800] [64236] [INFO] Starting gunicorn 19.7.1
+[2018-04-24 00:10:33 +0800] [64236] [INFO] Listening at: http://127.0.0.1:8000 (64236)
+[2018-04-24 00:10:33 +0800] [64236] [INFO] Using worker: eventlet
+[2018-04-24 00:10:33 +0800] [64241] [INFO] Booting worker with pid: 64241
+[2018-04-24 00:10:33 +0800] [64242] [INFO] Booting worker with pid: 64242
+[2018-04-24 00:12:44 +0800] [64236] [INFO] Handling signal: int
+[2018-04-24 00:12:44 +0800] [64242] [INFO] Worker exiting (pid: 64242)
+[2018-04-24 00:12:44 +0800] [64241] [INFO] Worker exiting (pid: 64241)
+[2018-04-24 00:12:45 +0800] [64236] [INFO] Shutting down: Master

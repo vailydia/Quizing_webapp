@@ -5,23 +5,47 @@
   <div class="row">
       <div class="col-xs-12 col-sm-2">
           <div class="sidebar">
-              <h3>Profile:</h3>
-              <p>User name: <span id="name"> {{username}}</span></p>
-              <p>Score: <span  id="score"> {{score}}</span></p>
+              <h4>Your Profile:</h4>
+              <p>User name: <span id="username">{{username}}</span></p>
+              <p>Score: <span  id="score">{{score}}</span></p>
               <p>WinRate: <span id="winRate">{{winRate}}</span></p>
-              <p>Room: <span id="room">{{room}}</span></p>
+              <p>Mode: <span id="mode">{{mode}}</span></p>
+          </div>
+          <div>
+              <h3>TIMER:</h3>
+              <center><strong><div id='time'></div></strong></center>
           </div>
       </div>
 
       <div class="col-xs-12 col-sm-8">
           <div class="main-box">
               <div class="container">
+                <div id='choosezone'>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-5 col-sm-push-1">
+                            <center><h4>YOU CAN CHOOSE ANY ONE TO START BATTLE. OTHERWISE, PLEASE WAIT. </h4></center>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-3 col-sm-push-2">
+                            <form>
+                                <ul id="userlist" class="nav nav-pills nav-stacked">
+                                    {% for user in waiting_users %}
+                                    <li><a onclick="choose_user({{user}})"><center>{{ user }}</center></a></li>
+                                    {% endfor %}
+                                    <br>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="queszone">
                   <div class="row">
                       <div class="col-xs-12 col-sm-1">
                           <strong><div id='nid'></div></strong>
                       </div>
                       <div class="col-xs-12 col-sm-5">
-                          <h4 id='Q'>Question 1: Which planet is the hottest?</h4>
+                          <h4 id='Q'></h4>
                           <ul id="qlist" class="nav nav-pills nav-stacked">
                               <li><a tabindex="1" id='A' onclick="select(1)"></a></li>
                               <li><a tabindex="2" id='B' onclick="select(2)"></a></li>
@@ -31,21 +55,29 @@
                           </ul>
                           <div class="row">
                               <div class="col-xs-12 col-sm-offset-2 col-sm-5">
-                                  <button class="btn btn-success btn-block" onclick="submitAnswer()">NEXT</button>
+                                  <button id='subbtn' class="btn btn-success btn-block" onclick="submitAnswer()">SUBMIT</button>
                               </div>
                           </div>
                       </div>
                   </div>
+                </div>
               </div>
           </div>
       </div>
 
       <div class="col-xs-12 col-sm-2">
-          <div class="sidebar">
-              <h3>TIMER:</h3>
-              <center><strong><div id='time'></div></strong></center>
+          <div class="sidebar sidebar_battle">
+              <h4>Battle Profile:</h4>
+              <p>User name: <span id="username_battle"> - </span></p>
+              <p>Score: <span  id="score_battle"> - </span></p>
+              <p>WinRate: <span id="winRate_battle"> - </span></p>
+              <p>Mode: <span id="mode_battle"> battle </span></p>
           </div>
       </div>
-  </div>
+    </div>
 
+{% endblock %}
+
+{% block javascript %}
+    <script src="{{ url_for('static', filename='js/main.js') }}" rel="stylesheet"></script>
 {% endblock %}

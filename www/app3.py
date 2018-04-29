@@ -142,13 +142,13 @@ def handle_mongodb():
     #
     #
     #
-    # user = {
-    #     'username': 'default-user',
-    #     'score': 0,
-    #     'winRate': 0,
-    #     'room': 'default-room',
-    # }
-    #
+    user = {
+        'username': 'default-user',
+        'score': 0,
+        'winRate': 0,
+        'room': 'default-room',
+    }
+
     # users.insert_one(user)
 
 
@@ -177,29 +177,6 @@ def handle_mongodb():
 
 
 
-
 if __name__ == "__main__":
-
-    from threading import Thread
-    from time import sleep
-
-
-    def print_hello(n):
-        print("enter to Thread %d!" % n)
-        sleep(10)
-        print("END to Thread %d!" % n)
-
-    # Create 5 threads
-    threads = []
-    for i in range(5):
-        t = Thread(target=print_hello, args=(i,))
-        t.start()
-        threads.append(t)
-    # Wait until all threads are finished
-    for t in threads:
-        t.join()
-
-    print("END test")
-
-    # handle_mongodb()
+    handle_mongodb()
 

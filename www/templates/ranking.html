@@ -1,0 +1,31 @@
+{% extends 'index.html' %}
+
+{% block container %}
+
+  <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <div class="main-box">
+              <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-5 col-sm-push-1">
+                            <center><h2>Quizzing Ranking</h2></center>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-3 col-sm-push-2">
+                            <form>
+                                <ul id="userlist" class="nav nav-pills nav-stacked">
+                                    {% for user in users %}
+                                    <li><a><center>User: {{ user[0] }}, &nbsp WinRate: {{ user[1] }}</center></a></li>
+                                    {% endfor %}
+                                    <br>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+{% endblock %}
