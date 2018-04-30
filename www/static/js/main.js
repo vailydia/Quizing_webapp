@@ -67,7 +67,8 @@
 
         // message handler for the 'join_room' channel
         socket.on('joined-room', function(response) {
-
+            document.getElementById("subbtn").disabled = false;
+            $('#remind').html("");
             console.log("joined-room: ");
             console.log(response);
             if(sessionStorage.getItem("mode") == 'single'){
@@ -165,7 +166,7 @@
                 }else if (myScore < battleScore) {
                     winnerInfo = "💪 YOU LOSE, KEEP ON 💪";
                 }else{
-                    winnerInfo = "🤝 Both sides TIE 🤝"
+                    winnerInfo = "🤝 Both sides TIE 🤝";
                 }
 
                 $('.main-box').html('<center><h1>' + myScore + '</h1>&nbsp &nbsp<h1>'
@@ -209,12 +210,11 @@
                 alert("Please choose a answer!");
             }
             //after submit, clear answer!
+            document.getElementById("subbtn").disabled = true;
+            $('#remind').html("<center>You submit answer: " + answer + "</center>");
             answer = null;
         }
 
-        socket.on('server response', function(data){
-            document.getElementById("subbtn").disabled = true;
-        });
 
         //start new round, clear all variable, out room, de connect...etc
         function newGame(){

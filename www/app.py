@@ -1,21 +1,21 @@
 from operator import itemgetter
 import heapq
 import json
-from flask import Flask, current_app, jsonify, request, render_template, redirect, url_for, session
-from flask_socketio import SocketIO, join_room, emit, send, leave_room, close_room, rooms, disconnect
+from flask import Flask, jsonify, request, render_template
+from flask_socketio import SocketIO, emit, leave_room
 import random
 from pymongo import MongoClient
-import eventlet
+
 # eventlet.monkey_patch()
 # Set this variable to "threading", "eventlet" or "gevent" to test the
 # different async modes, or leave it set to None for the application to choose
 # the best option based on installed packages.
-async_mode = None
+async_mode = 'eventlet'
 
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'xiweiling_quiz_webapp'
-socketio = SocketIO(app, engineio_logger=True, async_mode=async_mode)
+socketio = SocketIO(app, async_mode=async_mode)
 
 
 # database access
@@ -389,4 +389,4 @@ def default_error_handler(e):
 
 
 if __name__ == "__main__":
-    socketio.run(app, host='127.0.0.1', port=8000, debug=True)
+    socketio.run(app, host='127.0.0.1', port=8000)
