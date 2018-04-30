@@ -74,3 +74,6 @@ include servers/*;
 
 Again, aws url is more recommended, because it is well deployed with nginx and gunicorn, as well as supervisor.
 
+#### Links:
+App URL: ec2-35-173-229-36.compute-1.amazonaws.com
+Github: https://github.com/vailydia/Quizing_webapp
